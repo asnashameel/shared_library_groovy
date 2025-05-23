@@ -1,6 +1,6 @@
 def call() {
     stage('checkout') {
-         checkout scm
+         git url:'https://github.com/asnashameel/shared_library_groovy/', branch: 'main'
         }
     stage('build') {
          echo "maven building.."
